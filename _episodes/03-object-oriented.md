@@ -1,5 +1,6 @@
 ---
 title: "Object Oriented Programming"
+slug: dirac-software-engineering-object-oriented-programming
 teaching: 30
 exercises: 20
 questions:

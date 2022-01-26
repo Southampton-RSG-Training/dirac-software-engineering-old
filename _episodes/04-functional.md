@@ -1,5 +1,6 @@
 ---
 title: "Functional Programming"
+slug: dirac-software-engineering-functional-programming
 teaching: 25
 exercises: 15
 questions:

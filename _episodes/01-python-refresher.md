@@ -1,6 +1,6 @@
 ---
 title: "Brief Intro to Python"
-slug: "lesson-introduction"
+slug: dirac-software-engineering-brief-intro-python
 teaching: 0
 exercises: 0
 questions:

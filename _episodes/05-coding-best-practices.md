@@ -1,5 +1,6 @@
 ---
 title: "Best Practices in Writing Code"
+slug: dirac-software-engineering-best-practices-writing-code
 teaching: 0
 exercises: 0
 questions:

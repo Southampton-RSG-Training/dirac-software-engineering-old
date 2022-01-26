@@ -1,6 +1,6 @@
 ---
-title: "Introduction"
-slug: "lesson-introduction"
+title: "Software Development Lifecycle"
+slug: dirac-software-engineering-software-development-lifecycle
 teaching: 0
 exercises: 0
 questions:

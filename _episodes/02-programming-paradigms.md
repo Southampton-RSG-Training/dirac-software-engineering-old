@@ -1,6 +1,6 @@
 ---
 title: "Programming Paradigms"
-start: false
+slug: dirac-software-engineering-programming-paradigms
 teaching: 10
 exercises: 5
 questions:
