@@ -9,8 +9,7 @@ questions:
 objectives:
 - "Explain the benefits of writing readable code."
 - "Describe the importance of clear code indentation, formatting, and naming."
-- "List examples of things that should be code commented."
-- "Understand when code comments are not appropriate."
+- "List examples of things that should and should not be code commented."
 - "Explain why conforming to defined coding conventions is beneficial."
 - "Explain benefits of writing maintainable code."
 - "Describe what is meant by *technical debt*."
@@ -187,8 +186,6 @@ Look at other examples and decide what looks best. And don't hesitate to ask!
 
 Project-specific conventions can also embody requirements specific to our project. They promote consistency of naming across packages, components, classes, or functions: 'All test classes must have the suffix Test, e.g. FourierUtilitiesTest'. They ensure that others know who owns the copyright on our source code: 'All source code files must have a comment with the statement Copyright © My Organisation, 2010'. They ensure that others know about restrictions on our source code: 'All source code files should have a comment with the text "Licensed under the Apache License, Version 2.0".'
 
-Many programming environments allow templates to be defined, which help us to conform to coding conventions for source code files. But, we must remember that templates are just tools: they cannot guarantee readable code in themselves.
-
 Code analysis tools allow our coding conventions to be defined as rules. Our source code can then be analysed against these rules to automatically check for conformance. These tools can publish reports that highlight what rules are violated and where in the code the violations occur. Popular code analysis tools are CheckStyle for Java, StyleCop for C#, Pylint or Flake8 for Python, and codetools for R. For other languages see Wikipedia's [List of tools for static code analysis](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis). In addition, many IDEs such as PyCharm and VSCode are able to highlight common code convention and formatting issues as you type.
 
 
@@ -220,7 +217,11 @@ On the other hand, you might want to knock together some code to prove a concept
 
 When resources are tight, it's easy to focus on the bare minimum needed to get the software to do what it's meant to do and leave less pressing tasks, such as documentation, testing, and refactoring, until the end of the project. The plan often is to complete these tasks when time permits, and time rarely permits!
 
-You can save time, in the short term, by not commenting code, not refactoring to make it more readable, not addressing compiler warnings, leaving aside tests, skipping documentation and not recording why something was implemented in a specific way. These actions all incur **technical debt** and - just like financial debt - it's a debt that gathers interest over time. Technical debt is paid off in the cost of maintenance. Software that is written without maintainability in mind requires a lot more effort to maintain than it did to develop. For this reason, many applications are replaced simply because the overhead to modify them becomes prohibitive.
+You can save time, in the short term, by not commenting code, not refactoring to make it more readable, not addressing compiler warnings, leaving aside tests, skipping documentation and not recording why something was implemented in a specific way. These actions all incur **technical debt**:
+
+> *"Technical debt is the cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.”*
+
+And - just like financial debt - it's a debt that gathers interest over time. Technical debt is paid off in the cost of maintenance. Software that is written without maintainability in mind requires a lot more effort to maintain than it did to develop. For this reason, many applications are replaced simply because the overhead to modify them becomes prohibitive.
 
 Help is at hand! Developing maintainable software helps reduce technical debt. By thinking ahead and investing now you reduce the impact of changes in the future.
 
