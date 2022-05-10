@@ -320,10 +320,14 @@ A docstring needs to be the first thing inside a function's code block and shoul
 > > ~~~
 > > 3.142464
 > > ~~~
-> > {: .output}
+> > 
+> {: .output}
+> 
 > >
 > > In this example solution, we've provided a default value for the number of points, meaning that when someone calls the function they may choose not to specify how many points, in which case the default value will be used.
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 > ## Sum of Squares
@@ -341,7 +345,9 @@ A docstring needs to be the first thing inside a function's code block and shoul
 > >     return total
 > > ~~~
 > > {: .language-python}
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 

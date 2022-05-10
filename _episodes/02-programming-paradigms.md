@@ -100,7 +100,9 @@ Examples include: printing text, modifying the value of an argument, or changing
 > > 2. `say_hello` is not pure - printing text counts as a side effect, even though it is the clear purpose of the function
 > > 3. `append_item_1` is not pure - the argument `a_list` gets modified as a side effect - try this yourself to prove it
 > > 4. `append_item_2` is pure - the result is a new variable, so this time `a_list` doesn't get modified - again, try this yourself
-> {: .solution}
+> 
+{: .solution}
+
 >
 {: .challenge}
 
@@ -212,7 +214,9 @@ print(sum(l))
 > 1
 > 14
 > ~~~
-> {: .output}
+> 
+{: .output}
+
 >
 > > ## Solution
 > >
@@ -223,7 +227,9 @@ print(sum(l))
 > > ~~~
 > > {: .language-python}
 > >
-> {: .solution}
+> 
+{: .solution}
+
 >
 > Now let's assume we're reading in these numbers from an input file, so they arrive as a list of strings.
 > Modify your function so that it passes the following tests:
@@ -238,7 +244,9 @@ print(sum(l))
 > 14
 > 14
 > ~~~
-> {: .output}
+> 
+{: .output}
+
 >
 > > ## Solution
 > >
@@ -250,7 +258,9 @@ print(sum(l))
 > > ~~~
 > > {: .language-python}
 > >
-> {: .solution}
+> 
+{: .solution}
+
 >
 > Finally, like comments in Python, we'd like it to be possible for users to comment out numbers in the input file they give to our program.
 > Extend your function so that the following tests pass (don't worry about passing the first set of tests with lists of integers):
@@ -267,7 +277,9 @@ print(sum(l))
 > 14
 > 14
 > ~~~
-> {: .output}
+> 
+{: .output}
+
 >
 > > ## Solution
 > >
@@ -278,7 +290,9 @@ print(sum(l))
 > >     return sum(squares)
 > > ~~~
 > > {: .language-python}
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 ## Object Oriented
@@ -379,5 +393,7 @@ In the case of the line `alice.add_measurement(10)`, the value of the `self` par
 > >         return self.dosage_mg / self.weight_kg
 > > ~~~
 > > {: .language-python}
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
