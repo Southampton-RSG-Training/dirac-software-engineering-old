@@ -99,7 +99,7 @@ For much more information on lists, see https://docs.python.org/3/tutorial/datas
 index = {
     "python": 1,
     "c++": 5,
-    "fortran: 5,
+    "fortran": 5,
 }
 
 index["java"] = 12
@@ -155,6 +155,7 @@ Number was greater than 50
 In the example above, because `number` is greater than 50, the **condition** evaluates as `True` and the **block** of code within the `if` is executed.
 Code blocks are introduced in Python with a colon (`:`), which we see in the example above, but we'll also see in a couple of other contexts soon.
 If the condition doesn't evaluate as `True` (i.e. it evaluates as `False`), the block of code is skipped.
+The expression `number > 50` evaluates to `True` if the value of `number` is less than 50, otherwise it evaluates to `False`.
 
 We can also add more possible outcomes to the branching using `elif` (short for "else if") and `else`.
 With `elif` we provide another condition and the block of code we provide executes if all of the previous conditions evaluate as `False`, but this one evaluates as `True`.
@@ -178,6 +179,9 @@ else:
 Less than 100
 ~~~
 {: .output}
+
+In this example we see the `==` operator, used to check for equality.
+We use this instead of `=` because `=` is already used for assignment to a variable, so most languages use `==` to check for equality instead.
 
 Loops are another important construct, which in Python use the keyword `for`:
 
