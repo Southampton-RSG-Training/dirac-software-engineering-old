@@ -78,7 +78,9 @@ The typical stages of a software development process can be categorised as follo
 - **Deployment:** where the software is deployed and used for its intended purpose.
 - **Maintenance:** where updates are made to the software to ensure it remains fit for purpose, which typically involves fixing any further discovered issues and evolving it to meet new or changing requirements.
 
-Whether you are aware of them or not, these stages are followed implicitly or explicitly in every software project. What is required is always considered, for example, even if it isn't explored sufficiently or well understood.
+The process of following these stages, particularly when undertaken in this order, is referred to as the *waterfall* model of software development: each stage's outputs flow into the next stage sequentially.
+
+Whether projects or people that develop software are aware of them or not, these stages are followed implicitly or explicitly in every software project. What is required for a project (during requirements gathering) is always considered, for example, even if it isn't explored sufficiently or well understood.
 
 Following a process of development offers some major benefits:
 
@@ -92,8 +94,14 @@ Following a process of development offers some major benefits:
 > For your software example used in the first exercise (or perhaps another piece of software entirely), for each problem you identified, within which stage do you think that aspect should have been addressed?
 {: .challenge}
 
-FIXME: briefly show alternative arrangements of how the process can work, e.g. agile?
-
+> ## What about Agile Software Development?
+> 
+> You may have heard the term *agile* in relation to software development - perhaps in regards to an agile development process, or agile practices of development. But what is meant by agile, and how does it relate to the waterfall model?
+> 
+> With an agile approach, the software is written in a cyclical, iterative way with a focus on delivering a working product early, and incrementally adding to it over time. Whilst the above stages are largely still undertaken, they are done within a much shorter timeframe (a *timebox*) and also within a smaller scope of what will be developed. Work is undertaken in *sprints*, with software requirements prioritised for the sprint. Following a sprint (which typically lasts between 1 and 4 weeks), progress so far is demonstrated and assessed (as part of a *sprint review*), and the next timebox's requirements are then decided, at which point the process begins again within another sprint. The sprints continue until the project ends.
+> 
+> This process of reviewing requirements, prioritisation, and working on them is naturally continuous - with the benefit that at key stages you are repeatedly re-evaluating what is important and needs to be worked on which helps to ensure real concrete progress against project goals and requirements which - particularly in academia - may change over time. For a good overview of agile development in more detail, see [this resource](https://www.geeksforgeeks.org/software-engineering-agile-software-development/).
+{: .callout}
 
 ## The Importance of Getting Requirements Right
 
