@@ -59,7 +59,12 @@ Later levels imply the earlier ones. So what should we aim for? As researchers w
 
 > ## What Do You Think?
 > 
-> Have you used any academically-produced software in your work, or perhaps developed some yourself? What was good about it, what were its shortcomings, and what aspects do you think should have been given greater attention during its development (or even afterwards)?
+> Reflecting on software you've used in the past, and their good and bad qualities, can help you when selecting suitable software for a task. Additionally, for developers, this kind of reflection helps prioritise the qualities you want to aim for in your own software.
+> 
+> Have you used any academically-produced (or other) software in your work, or perhaps developed some yourself?
+> 
+> - List three things that were good about it, and three shortcomings
+> - Which three aspects do you think should have been given greater attention during its development (or even afterwards)?
 {: .challenge}
 
 ## The Software Development Process
