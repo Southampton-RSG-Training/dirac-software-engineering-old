@@ -209,9 +209,23 @@ The maintainability of software depends on quite a few factors. However, in gene
 
 ### Long- or Short-Lived Code?
 
-You may be developing open-source software with the intent that it will live on after your project completes. It could be important to you that your software is adopted and used by other projects as this may help you get future funding. It can make your software more attractive to potential users if they have the confidence that they can fix bugs that arise or add new features they need, if they can be assured that the evolution of the software is not dependant upon the lifetime of your project.
+You or others on your project may be developing open-source software with the intent that it will live on after your project completes. It could be important to you that your software is adopted and used by other projects as this may help you get future funding. It can make your software more attractive to potential users if they have the confidence that they can fix bugs that arise or add new features they need, if they can be assured that the evolution of the software is not dependant upon the lifetime of your project.
 
-On the other hand, you might want to knock together some code to prove a concept or to perform a quick calculation and then just discard it. But can you be sure you'll never want to use it again? Maybe a few months from now you'll realise you need it after all, or you'll have a colleague say "I wish I had a..." and realise you've already made one. A small investment in the maintainability of your code makes it easier to pick it up after a break, and can provide you with an insurance policy should your disposable software turn out to be more useful than you originally thought.
+On the other hand, you might want to knock together some code to prove a concept or to perform a quick calculation and then just discard it. But can you be sure you'll never want to use it again? Maybe a few months from now you'll realise you need it after all, or you'll have a colleague say "I wish I had a..." and realise you've already made one!
+
+> ## Short-Lived Code, or Not?
+> 
+> Have you ever used any code or software that was intended to be "short-lived" - whether written by yourself or not? Perhaps it's a short script or other small piece of code. Would it have benefited from greater effort to improve it for longer-term use, and if so, when should that have been considered?
+{: .challenge}
+
+> ## What to do with Short-Lived Code?
+> 
+> Even short-lived code can contain useful lessons learned, perhaps about how to use a particular technology, how it was written, or importantly, how it solved a *particular problem*. So when short-lived code has outlived it's original purpose, what should you do with it?
+> 
+> One way is to essentially *archive* the software, putting it into a state where it can be readily picked up again later. This usually means tidying up the code, adding comments, and in particular adding a short document (sometimes called a README) that summarises the code and how to set up and use it. Having the code stored in a code repository like GitHub is great for this, and very strongly recommended - for all code you write.
+> 
+> A small investment in the maintainability of your code makes it easier to pick it up after a break, and can provide you with an insurance policy should your disposable software turn out to be more useful than you originally thought.
+{: .callout}
 
 ### The Cost of Neglecting Maintainability
 
@@ -237,9 +251,16 @@ Developing maintainable software is like picnicking: once you're finished, leave
 - *Use version control:* version control helps keep code and documentation up to date and synchronised, and allows you to roll back any parts of your code to previous versions if you run into trouble
 - *Select sustainable technologies:* to avoid using libraries and other dependencies that may become outdated or even non-functional during development or use, be sure to choose technologies that have a good track record of delivering quality releases, and a sustainable, active development community.
 
+> ## Which Qualities do *you* Value?
+> 
+> Consider the above list from your own perspective, either as a user of software or as a developer (or both). List these in the order they are important to you.
+> 
+> If you've listed them from both perspectives, how is the ordering different? If you find there any at or near the top of both lists, that may help you prioritise what to aim for when developing code.
+{: .challenge}
+
 ### A Maintainability Checklist
 
-Answering the following questions will help you judge the maintainability of your software:
+Here's another developer-level perspective on maintainability, which this time asks questions to help you judge maintainability of software you write:
 
 - Can I find the code that is related to a specific problem or change?
 - Can I understand the code? Can I explain the rationale behind it to someone else?
@@ -248,7 +269,12 @@ Answering the following questions will help you judge the maintainability of you
 - Can I make a change with only a low risk of breaking existing features?
 - If I do break something, is it quick and easy to detect and diagnose the problem? 
 
-Now ask the questions again but, this time, adopt the perspective of someone else in your team and someone who is completely new to your software.
+> ## Developers: How Maintainable is Your Code?
+> 
+> From your own perspective, answer the questions above for a piece of software, code, or script you've written in the past.
+> Next, ask the questions again but, this time, adopt the perspective of someone else in your team who is completely new to your software.
+> How did you do? What changes would help you improve it?
+{: .challenge}
 
 
 {% include links.md %}
