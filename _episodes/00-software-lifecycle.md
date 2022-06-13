@@ -107,9 +107,7 @@ Following a process of development offers some major benefits:
 
 The importance of gaining a solid understanding for what is required for a software project (or any project) before you begin cannot be overstated. As mentioned, going back and changing an existing implementation is an expensive process.
 
-Requirements can be categorised in many ways, but at a high level a useful way to split them is into *Business Requirements*, *User Requirements*, and *Solution Requirements*. Let's take a look at these now. As an exemplar we'll use some hypothetical statistical analysis software for clinical trials to illustrate the differences between them.
-
-FIXME: change example to an HPC-oriented research project: from a simple software package, to running it on DiRAC, to results analysis for publication
+Requirements can be categorised in many ways, but at a high level a useful way to split them is into *Business Requirements*, *User Requirements*, and *Solution Requirements*. Let's take a look at these now. As an exemplar we'll use some hypothetical statistical analysis software for clinical trials of anti-inflammatory drugs to illustrate the differences between them.
 
 ### Business Requirements
 
@@ -128,17 +126,17 @@ For our software, they could include things for trial managers such as (building
 
 - UR1 (from BR1): support for statistical measures in generated trial reports as required by revised auditing standards (standard deviation, ...)
 - UR2 (from BR2): support for producing textual representations of statistics in trial reports as required by revised auditing standards
-- UR3 (from BR2): ability to have an individual trial report processed and generated in under 30 seconds
+- UR3 (from BR2): ability to have an individual trial report processed and generated in under 20 minutes (NB: perhaps we could assume this normally takes a couple of hours to access and process the data from various sources)
 
 ### Solution Requirements
 
 Solution (or product) requirements describe characteristics that a concrete solution or product must have to satisfy the stakeholder requirements. They fall into two key categories:
 
 - *Functional Requirements* focus on functions and features of a solution. For our software, building on our user requirements, e.g.
-  - SR1 (from UR1): statistical measures include mean average, minimum, maximum, and standard deviation
+  - SR1 (from UR1): statistical measures include mean average, minimum, maximum, and standard deviation of inflammation readings for each patient for each day of a trial
   - SR2 (from UR2): generate a textual representation of statistics that can be imported into auditing documents
 - *Non-functional Requirements* focus on *how* the behaviour of a solution is expressed or constrained, e.g. performance, security, usability, or portability. These are also known as *quality of service* requirements. For our project, e.g.:
-  - SR3 (from UR3): generate graphical statistics report on clinical workstation configuration in under 30 seconds
+  - SR3 (from UR3): use local HPC-ABC resource (as an infrastructural constraint) to generate trial report within 30 minutes
 
 ### From Requirements to Implementation
 
