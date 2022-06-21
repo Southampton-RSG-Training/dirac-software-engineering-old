@@ -191,13 +191,12 @@ print(sum(l))
 
 > ## Sum of Squares
 >
-> Using the MapReduce model and a list comprehension, write a function that calculates the sum of the squares of the values in a list.
-> You can use the builtin Python function `sum` to sum a sequence of numbers.
-> Your function should behave as below:
+> Using the MapReduce model and a list comprehension, we want to write a function that calculates the sum of the squares of the values in a list.
+> Our function should behave as below:
 >
 > ~~~
 > def sum_of_squares(l):
->     # Your code here
+>     # Our code here
 >
 > print(sum_of_squares([0]))
 > print(sum_of_squares([1]))
@@ -218,78 +217,38 @@ print(sum(l))
 {: .output}
 
 >
+> Which of these functions has the correct behaviour?
+>
+> ~~~ python
+> def sum_of_squares_a(l):
+>     squares = [x * x for x in l]
+>     return sum(squares)
+>
+> def sum_of_squares_b(l):
+>     squares = {x: x * x for x in l}
+>     return sum(squares)
+>
+> def sum_of_squares_c(l):
+>     sum = 0
+>     return [sum = sum + x * x for x in l]
+>
+> def sum_of_squares_d(l):
+>     squares = [x * x for x in range(l)]
+>     return sum(squares)
+> ~~~
+> {: .language-python}
+>
 > > ## Solution
 > >
+> > The correct answer is `sum_of_squares_a`.
+> >
 > > ~~~
-> > def sum_of_squares(l):
+> > def sum_of_squares_a(l):
 > >     squares = [x * x for x in l]
 > >     return sum(squares)
 > > ~~~
 > > {: .language-python}
 > >
-> 
-{: .solution}
-
->
-> Now let's assume we're reading in these numbers from an input file, so they arrive as a list of strings.
-> Modify your function so that it passes the following tests:
->
-> ~~~
-> print(sum_of_squares(['1', '2', '3']))
-> print(sum_of_squares(['-1', '-2', '-3']))
-> ~~~
-> {: .language-python}
->
-> ~~~
-> 14
-> 14
-> ~~~
-> 
-{: .output}
-
->
-> > ## Solution
-> >
-> > ~~~
-> > def sum_of_squares(l):
-> >     integers = [int(x) for x in l]
-> >     squares = [x * x for x in integers]
-> >     return sum(squares)
-> > ~~~
-> > {: .language-python}
-> >
-> 
-{: .solution}
-
->
-> Finally, like comments in Python, we'd like it to be possible for users to comment out numbers in the input file they give to our program.
-> Extend your function so that the following tests pass (don't worry about passing the first set of tests with lists of integers):
->
-> ~~~
-> print(sum_of_squares(['1', '2', '3']))
-> print(sum_of_squares(['-1', '-2', '-3']))
-> print(sum_of_squares(['1', '2', '#100', '3']))
-> ~~~
-> {: .language-python}
->
-> ~~~
-> 14
-> 14
-> 14
-> ~~~
-> 
-{: .output}
-
->
-> > ## Solution
-> >
-> > ~~~
-> > def sum_of_squares(l):
-> >     integers = [int(x) for x in l if x[0] != '#']
-> >     squares = [x * x for x in integers]
-> >     return sum(squares)
-> > ~~~
-> > {: .language-python}
 > 
 {: .solution}
 
@@ -445,5 +404,3 @@ The order in which it does this search is known as the **method resolution order
 
 The line `super().__init__(name)` gets the parent class, then calls the `__init__` method, providing the `name` variable that `Person.__init__` requires.
 This is quite a common pattern, particularly for `__init__` methods, where we need to make sure an object is initialised as a valid `X`, before we can initialise it as a valid `Y` - e.g. a valid `Person` must have a name, before we can properly initialise a `Patient` model with their inflammation data
-
-{: .challenge}
