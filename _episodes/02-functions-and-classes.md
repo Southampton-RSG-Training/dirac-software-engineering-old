@@ -105,6 +105,7 @@ print(pi)
 >         total += i * i
 >     return total
 > ~~~
+> {: .language-python}
 > 
 > > ## Solution
 > > 
@@ -123,7 +124,9 @@ print(pi)
 > >     return total
 > > ~~~
 > > {: .language-python}
+> >
 > {: .solution}
+>
 {: .challenge}
 
 ### Function Composition
