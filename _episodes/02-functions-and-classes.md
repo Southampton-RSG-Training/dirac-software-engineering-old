@@ -46,52 +46,72 @@ The last component of the function definition above is the **docstring**.
 Docstrings aren't a requirement, but can make it much easier to understand what your code is doing, especially if it's complex or you haven't looked at it for a while.
 A docstring needs to be the first thing inside a function's code block and should be enclosed within triple double quotes (i.e. `"""`).
 
-> ## A Function for Pi
->
-> Take our existing example for the Monte Carlo approximation of pi and convert it into a function.
->
-> > ## Solution
-> > 
-> > ~~~ python
-> > import random
-> >
-> > def approximate_pi(num_points=1000000):
-> >     """Monte-carlo approximation of pi by counting points within a circle."""
-> >     inside = 0
-> > 
-> >     for i in range(num_points):
-> >         x = random.uniform(-1, 1)
-> >         y = random.uniform(-1, 1)
-> > 
-> >         r2 = x**2 + y**2
-> > 
-> >         if r2 <= 1:
-> >             inside += 1
-> > 
-> >     return = 4 * inside / num_points
-> > 
-> > pi = approximate_pi()
-> > print(pi)
-> > ~~~
-> > {: .language-python}
-> > 
-> > ~~~
-> > 3.142464
-> > ~~~
-> > {: .output}
-> >
-> > In this example solution, we've provided a default value for the number of points, meaning that when someone calls the function they may choose not to specify how many points, in which case the default value will be used.
-> {: .solution}
-{: .challenge}
+For a more practical example, let's convert our existing code for calculating pi into a function:
+
+~~~ python
+import random
+
+def approximate_pi(num_points):
+    """Monte-carlo approximation of pi by counting points within a circle."""
+    inside = 0
+
+    for i in range(num_points):
+        x = random.uniform(-1, 1)
+        y = random.uniform(-1, 1)
+
+        r2 = x**2 + y**2
+
+        if r2 <= 1:
+            inside += 1
+
+    return = 4 * inside / num_points
+
+pi = approximate_pi(1000000)
+print(pi)
+~~~
+{: .language-python}
+
+~~~
+3.142464
+~~~
+{: .output}
 
 > ## Sum of Squares
 > 
-> Write a function which accepts an integer and returns the sum of the squares of integers up to **and including** this number.
+> We need a function which accepts an integer and returns the sum of the squares of integers up to **and including** this number.
+> i.e. 1 -> 1, 2 -> 5, 3 -> 14
+>
+> ~~~ python
+> def sum_of_squares_a(limit):
+>     for i in range(limit):
+>         total = i * i
+>     return total
+>
+> def sum_of_squares_b(limit):
+>     total = 0
+>     for i in range(limit):
+>         total += i * i
+>     return total
+>
+> def sum_of_squares_c(limit):
+>     total = 0
+>     for i in range(limit + 1):
+>         total += i * i
+>     return total
+>
+> def sum_of_squares_d(limit):
+>     total = 0
+>     for i in range(limit - 1):
+>         total += i * i
+>     return total
+> ~~~
 > 
 > > ## Solution
 > > 
+> > The correct answer is function 'c'.
+> >
 > > ~~~ python
-> > def sum_of_squares(limit):
+> > def sum_of_squares_c(limit):
 > >     total = 0
 > >     for i in range(limit + 1):
 > >         total += i * i
@@ -226,21 +246,56 @@ In the case of the line `alice.add_measurement(10)`, the value of the `self` par
 > ## Adding a Method
 > 
 > Something we might need to calculate during our clinical trial is the dosage per body mass, often reported in units of milligrams per kilogram (mg/kg).
+> Which of the examples below would allow us to do this?
+>
+> ~~~ python
+> class Patient_A:
+>     def __init__(self, name, dosage_mg, weight_kg):
+>         self.name = name
+>         self.dosage_mg = dosage_mg
+>         self.weight_kg = weight_kg
 > 
-> Add a new method to our patient class which will calculate the measure for us.
+>     def dosage_per_kg():
+>         return self.dosage_mg / self.weight_kg
+>
+> class Patient_B:
+>     def __init__(self, name, dosage_mg, weight_kg):
+>         self.name = name
+>         self.dosage_mg = dosage_mg
+>         self.weight_kg = weight_kg
+> 
+>     def dosage_per_kg(self):
+>         return self.dosage_mg / self.weight_kg
+>
+> class Patient_C:
+>     def __init__(self, name, dosage_mg, weight_kg):
+>         self.name = name
+>         self.dosage_mg = dosage_mg
+>         self.weight_kg = weight_kg
+> 
+>     def dosage_per_kg():
+>         return dosage_mg / weight_kg
+>
+> class Patient_D:
+>     def __init__(self, name, dosage_mg, weight_kg):
+>         self.name = name
+>         self.dosage_mg = dosage_mg
+>         self.weight_kg = weight_kg
+> 
+>     def dosage_per_kg(dosage_mg, weight_kg):
+>         return dosage_mg / weight_kg
+> ~~~
+> {: .language-python}
 > 
 > > ## Solution
+> > The correct solution is `Patient_B`.
+> >
 > > ~~~ python
-> > class Patient:
+> > class Patient_B:
 > >     def __init__(self, name, dosage_mg, weight_kg):
 > >         self.name = name
 > >         self.dosage_mg = dosage_mg
 > >         self.weight_kg = weight_kg
-> > 
-> >         self.measurements = []
-> > 
-> >     def add_measurement(self, value):
-> >         self.measurements.append(value)
 > > 
 > >     def dosage_per_kg(self):
 > >         return self.dosage_mg / self.weight_kg
