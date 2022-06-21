@@ -108,7 +108,11 @@ print(pi)
 > 
 > > ## Solution
 > > 
-> > The correct answer is function 'c'.
+> > The correct answer is the function `sum_of_squares_c`.
+> >
+> > - Function A just returns the square of `limit - 1` as it overwrites the value of `total` each time round the loop.
+> > - Function B stops the loop one iteration too early.
+> > - Function D stops the loop two iterations too early.
 > >
 > > ~~~ python
 > > def sum_of_squares_c(limit):
@@ -273,7 +277,7 @@ In the case of the line `alice.add_measurement(10)`, the value of the `self` par
 >         self.dosage_mg = dosage_mg
 >         self.weight_kg = weight_kg
 > 
->     def dosage_per_kg():
+>     def dosage_per_kg(self):
 >         return dosage_mg / weight_kg
 >
 > class Patient_D:
@@ -289,6 +293,10 @@ In the case of the line `alice.add_measurement(10)`, the value of the `self` par
 > 
 > > ## Solution
 > > The correct solution is `Patient_B`.
+> >
+> > - Class A doesn't provide the `self` argument to the new method - this will cause an error when we try to call the function.
+> > - Class C forgets to use `self.` to access the two data attributes on the instance of the class.
+> > - Class D does both of the above - it looks like it expects to receive the two data attributes when the function is called, but this avoids the point of putting the method within the class.
 > >
 > > ~~~ python
 > > class Patient_B:
