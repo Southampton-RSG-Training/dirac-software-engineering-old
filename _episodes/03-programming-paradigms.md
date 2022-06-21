@@ -77,7 +77,7 @@ Examples include: printing text, modifying the value of an argument, or changing
 > Which of these functions are pure?
 > If you're not sure, explain your reasoning to someone else, do they agree?
 >
-> ~~~
+> ~~~ python
 > def add_one(x):
 >     return x + 1
 >
@@ -194,7 +194,7 @@ print(sum(l))
 > Using the MapReduce model and a list comprehension, we want to write a function that calculates the sum of the squares of the values in a list.
 > Our function should behave as below:
 >
-> ~~~
+> ~~~ python
 > def sum_of_squares(l):
 >     # Our code here
 >
@@ -242,7 +242,11 @@ print(sum(l))
 > >
 > > The correct answer is `sum_of_squares_a`.
 > >
-> > ~~~
+> > - Function B uses a dictionary comprehension - when we attempt to `sum` this we get a sum of the dictionay keys.
+> > - Function C uses invalid syntax - we can't use `=` assignment inside a comprehension.
+> > - Function D behaves similarly to the sum of squares code we wrote in the previous section - it doesn't use the values from the list, but the length of the list.
+> >
+> > ~~~ python
 > > def sum_of_squares_a(l):
 > >     squares = [x * x for x in l]
 > >     return sum(squares)
