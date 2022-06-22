@@ -371,13 +371,13 @@ class Patient(Person):
 alice = Patient('Alice', 40, 65)
 print(alice)
 
-obs = alice.add_observation(3)
+obs = alice.add_observation(3, 1)
 print(obs)
 
 bob = Person('Bob')
 print(bob)
 
-obs = bob.add_observation(4)
+obs = bob.add_observation(4, 1)
 print(obs)
 ~~~
 {: .language-python}
