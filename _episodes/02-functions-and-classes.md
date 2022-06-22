@@ -64,7 +64,7 @@ def approximate_pi(num_points):
         if r2 <= 1:
             inside += 1
 
-    return = 4 * inside / num_points
+    return 4 * inside / num_points
 
 pi = approximate_pi(1000000)
 print(pi)
