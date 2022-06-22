@@ -108,7 +108,7 @@ print(index["c++"])
 {: .language-python}
 
 ```
-2
+5
 ```
 {: .output}
 
