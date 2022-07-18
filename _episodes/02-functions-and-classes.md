@@ -80,6 +80,8 @@ print(pi)
 > 
 > We need a function which accepts an integer and returns the sum of the squares of integers up to **and including** this number.
 > i.e. 1 -> 1, 2 -> 5, 3 -> 14
+> 
+> Which one of the functions below would accomplish this?
 >
 > ~~~ python
 > def sum_of_squares_a(limit):
