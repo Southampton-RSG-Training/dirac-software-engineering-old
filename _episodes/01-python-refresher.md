@@ -91,7 +91,7 @@ print(odd_numbers[3])
 ```
 {: .output}
 
-For much more information on lists, see https://docs.python.org/3/tutorial/datastructures.html#more-on-lists.
+For much more information on lists, see <https://docs.python.org/3/tutorial/datastructures.html#more-on-lists>.
 
 **Dictionaries** are the second type of collection, typically used to associate a key and a value - like the index of a book:
 
