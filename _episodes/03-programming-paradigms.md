@@ -238,7 +238,7 @@ print(sum(l))
 > >
 > > The correct answer is `sum_of_squares_a`.
 > >
-> > - Function B uses a dictionary comprehension - when we attempt to `sum` this we get a sum of the dictionay keys.
+> > - Function B uses a dictionary comprehension - when we attempt to `sum` this we get a sum of the dictionary keys.
 > > - Function C uses invalid syntax - we can't use `=` assignment inside a comprehension.
 > > - Function D behaves similarly to the sum of squares code we wrote in the previous section - it doesn't use the values from the list, but the length of the list.
 > >
