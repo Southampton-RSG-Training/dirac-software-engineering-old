@@ -110,7 +110,6 @@ Examples include: printing text, modifying the value of an argument, or changing
 > 
 {: .solution}
 
->
 {: .challenge}
 
 ### MapReduce in Python - Comprehensions
